@@ -48,4 +48,4 @@ O conversor suporta as seguintes moedas:
 
 1. Clone o repositório:
    ```bash
-   git clone https:**
+   git clone https://github.com/Jefersonnns/Conversor-de-Moedas
