@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .currency-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .currency-container img {
+            margin-left: 10px;
+            width: 30px;
+            height: 20px;
+        }
+        
+        footer {
+            background: #1e2a38;
+            color: #c2c2c2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #555;
+        }
+
+        footer a {
+            color: #ffab00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="converter">
+            <div class="input-group">
+                <label for="amount">Quantia:</label>
+                <input type="text" id="amount" placeholder="R$ 0,00" />
+            </div>
+            <div class="currency-group">
+                <label for="from-currency">De:</label>
+                <div class="currency-container">
+                    <select id="from-currency">
+                        <option value="USD" data-img="images/USD.png">USD - Dólar</option>
+                        <option value="EUR" data-img="images/EUR.png">EUR - Euro</option>
+                        <option value="BRL" data-img="images/BRL.png">BRL - Real</option>
+                        <option value="JPY" data-img="images/JPY.png">JPY - Iene</option>
+                        <option value="GBP" data-img="images/GBP.png">GBP - Libra Esterlina</option>
+                        <option value="AUD" data-img="images/AUD.png">AUD - Dólar Australiano</option>
+                        <option value="CAD" data-img="images/CAD.png">CAD - Dólar Canadense</option>
+                        <option value="CHF" data-img="images/CHF.png">CHF - Franco Suíço</option>
+                        <option value="CNY" data-img="images/CNY.png">CNY - Yuan</option>
+                        <option value="SEK" data-img="images/SEK.png">SEK - Coroa Sueca</option>
+                        <option value="NZD" data-img="images/NZD.png">NZD - Dólar Neozelandês</option>
+                        <option value="MXN" data-img="images/MXN.png">MXN - Peso Mexicano</option>
+                        <option value="SGD" data-img="images/SGD.png">SGD - Dólar de Singapura</option>
+                        <option value="NOK" data-img="images/NOK.png">NOK - Coroa Norueguesa</option>
+                        <option value="KRW" data-img="images/KRW.png">KRW - Won Sul-Coreano</option>
+                        <option value="TRY" data-img="images/TRY.png">TRY - Lira Turca</option>
+                        <option value="RUB" data-img="images/RUB.png">RUB - Rublo Russo</option>
+                        <option value="INR" data-img="images/INR.png">INR - Rúpia Indiana</option>
+                        <option value="ZAR" data-img="images/ZAR.png">ZAR - Rand Sul-Africano</option>
+                        <option value="PLN" data-img="images/PLN.png">PLN - Zloty Polonês</option>
+                        <option value="IDR" data-img="images/IDR.png">IDR - Rúpia Indonésia</option>
+                        <option value="HUF" data-img="images/HUF.png">HUF - Florim Húngaro</option>
+                        <option value="CZK" data-img="images/CZK.png">CZK - Coroa Checa</option>
+                        <option value="ILS" data-img="images/ILS.png">ILS - Novo Shekel Israelense</option>
+                    </select>
+                    <img id="from-currency-img" src="images/USD.png" alt="Imagem da moeda" />
+                </div>
+            </div>
+            <div class="currency-group">
+                <label for="to-currency">Para:</label>
+                <div class="currency-container">
+                    <select id="to-currency">
+                        <option value="USD" data-img="images/USD.png">USD - Dólar</option>
+                        <option value="EUR" data-img="images/EUR.png">EUR - Euro</option>
+                        <option value="BRL" data-img="images/BRL.png">BRL - Real</option>
+                        <option value="JPY" data-img="images/JPY.png">JPY - Iene</option>
+                        <option value="GBP" data-img="images/GBP.png">GBP - Libra Esterlina</option>
+                        <option value="AUD" data-img="images/AUD.png">AUD - Dólar Australiano</option>
+                        <option value="CAD" data-img="images/CAD.png">CAD - Dólar Canadense</option>
+                        <option value="CHF" data-img="images/CHF.png">CHF - Franco Suíço</option>
+                        <option value="CNY" data-img="images/CNY.png">CNY - Yuan</option>
+                        <option value="SEK" data-img="images/SEK.png">SEK - Coroa Sueca</option>
+                        <option value="NZD" data-img="images/NZD.png">NZD - Dólar Neozelandês</option>
+                        <option value="MXN" data-img="images/MXN.png">MXN - Peso Mexicano</option>
+                        <option value="SGD" data-img="images/SGD.png">SGD - Dólar de Singapura</option>
+                        <option value="NOK" data-img="images/NOK.png">NOK - Coroa Norueguesa</option>
+                        <option value="KRW" data-img="images/KRW.png">KRW - Won Sul-Coreano</option>
+                        <option value="TRY" data-img="images/TRY.png">TRY - Lira Turca</option>
+                        <option value="RUB" data-img="images/RUB.png">RUB - Rublo Russo</option>
+                        <option value="INR" data-img="images/INR.png">INR - Rúpia Indiana</option>
+                        <option value="ZAR" data-img="images/ZAR.png">ZAR - Rand Sul-Africano</option>
+                        <option value="PLN" data-img="images/PLN.png">PLN - Zloty Polonês</option>
+                        <option value="IDR" data-img="images/IDR.png">IDR - Rúpia Indonésia</option>
+                        <option value="HUF" data-img="images/HUF.png">HUF - Florim Húngaro</option>
+                        <option value="CZK" data-img="images/CZK.png">CZK - Coroa Checa</option>
+                        <option value="ILS" data-img="images/ILS.png">ILS - Novo Shekel Israelense</option>
+                    </select>
+                    <img id="to-currency-img" src="images/USD.png" alt="Imagem da moeda" />
+                </div>
+            </div>
+            <button id="convert-btn">Converter</button>
+            <div class="result">
+                <h2>Resultado:</h2>
+                <p id="conversion-result">-</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jeferson Oliveira.</p>
+        <p><a href="https://l1nq.com/Jeferson-Oliveira" target="_blank">Meu Currículo</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
