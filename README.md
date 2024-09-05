@@ -46,11 +46,10 @@ O conversor suporta as seguintes moedas:
 
 ## Tecnologias usadas
 Este projeto foi desenvolvido utilizando as seguintes linguagens e tecnologias:
-
-**HTML**: Para estruturar o conteúdo da interface web.
-**CSS**: Para estilizar e criar um design atraente e intuitivo.
-**JavaScript**: Para a lógica de conversão de moedas e manipulação da interface.
-**API**: Utilizada para obter taxas de câmbio atualizadas.
+- **HTML**: Para estruturar o conteúdo da interface web.
+- **CSS**: Para estilizar e criar um design atraente e intuitivo.
+- **JavaScript**: Para a lógica de conversão de moedas e manipulação da interface.
+- **API**: Utilizada para obter taxas de câmbio atualizadas.
 
 ## Instalação
 Clone o repositório:
