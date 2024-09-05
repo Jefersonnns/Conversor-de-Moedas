@@ -54,13 +54,10 @@ Este projeto foi desenvolvido utilizando as seguintes linguagens e tecnologias:
 
 ## Instalação
 Clone o repositório:
-
-bash
-Copiar código
 git clone https://github.com/Jefersonnns/Conversor-de-Moedas
+
 Navegue até o diretório do projeto:
 
-bash
-Copiar código
 cd Conversor-de-Moedas
+
 Abra o arquivo index.html em um navegador web para usar o conversor de moedas.
