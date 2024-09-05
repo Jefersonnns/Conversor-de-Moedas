@@ -44,8 +44,23 @@ O conversor suporta as seguintes moedas:
 2. **Escolha a Moeda de Destino**: Selecione a moeda para a qual deseja converter.
 3. **Visualize a Conversão**: O resultado da conversão será exibido junto com a bandeira do país da moeda selecionada.
 
-## Instalação
+## Tecnologias usadas
+Este projeto foi desenvolvido utilizando as seguintes linguagens e tecnologias:
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Jefersonnns/Conversor-de-Moedas
+**HTML**: Para estruturar o conteúdo da interface web.
+**CSS**: Para estilizar e criar um design atraente e intuitivo.
+**JavaScript**: Para a lógica de conversão de moedas e manipulação da interface.
+**API**: Utilizada para obter taxas de câmbio atualizadas.
+
+## Instalação
+Clone o repositório:
+
+bash
+Copiar código
+git clone https://github.com/Jefersonnns/Conversor-de-Moedas
+Navegue até o diretório do projeto:
+
+bash
+Copiar código
+cd Conversor-de-Moedas
+Abra o arquivo index.html em um navegador web para usar o conversor de moedas.
